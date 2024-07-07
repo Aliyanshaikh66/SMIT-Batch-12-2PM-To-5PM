@@ -1,0 +1,50 @@
+/* *{
+    background-color: aqua;
+}
+.para i{
+    font-family: bold;
+    color: brown;
+}
+#para{
+    color: yellow;
+}
+h1, h3{
+    color: yellow;
+}
+li>a{
+    color:red;
+}
+h4 p{
+    font-weight: bold;
+    color: blueviolet;
+} */
+
+/* #name~.sm{
+    color: blue;
+    font-weight: bold;
+    
+} */
+/* 
+p{
+    color: red;
+    font-weight: bold;
+} */
+
+* {
+    font-family: Arial, Verdana, sans-serif;}
+    h1 {
+    font-family: "Courier New", monospace;}
+    i {
+    color: green !important;}
+    i {
+    color: red;}
+    b {
+    color: pink;}
+    p b {
+    color: blue !important;}
+    p b {
+    color: violet;}
+    p#intro {
+    font-size: 100%;}
+    p {
+    font-size: 75%;}
