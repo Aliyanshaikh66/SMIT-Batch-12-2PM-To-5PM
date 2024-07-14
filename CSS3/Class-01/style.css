@@ -29,15 +29,15 @@ p{
     color: red;
     font-weight: bold;
 } */
-
+/* 
 * {
     font-family: Arial, Verdana, sans-serif;}
     h1 {
     font-family: "Courier New", monospace;}
     i {
-    color: green !important;}
+    color: rgb(51, 146, 51) !important;}
     i {
-    color: red;}
+    color: rgb(166, 110, 110);}
     b {
     color: pink;}
     p b {
@@ -47,4 +47,18 @@ p{
     p#intro {
     font-size: 100%;}
     p {
-    font-size: 75%;}
+    font-size: 75%;} 
+
+    .test{
+        font-family: Arial, Helvetica, sans-serif;
+    } */
+
+    .text-img{
+        font-size: 100px;
+        background-image: url(./download.png);
+        background-size: contain;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: ;
+
+
+    }
