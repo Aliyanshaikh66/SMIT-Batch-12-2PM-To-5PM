@@ -56,33 +56,44 @@ body{
 /* .main{
     display: inline;
 } */
+*{
+    background-color: burlywood;
+}
+.main{
+     text-align: center;
+    
+}
 
 .centre {
-    display: inline-block;
+    /* display: inline-block; */
     background-color: #0088dd;
     border: 2px solid #000000;
     margin: 10px auto;
     padding:  10px;
     width: 20%;
     border-radius: 10px;
+    text-align: center; 
 }
 li{
     display: inline;
     margin-right: 25px;
-
-
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
 }
 .li1{
-    display: hidden;
+    display: none;
     visibility: hidden;
 }
 .nav{
     justify-content: center;
+    text-align: center;
 }
-input{
+/* input{
 
-}
-h1{
+} */
+/* h1{
     border: 2px dotted black;
    
-}
+} */
