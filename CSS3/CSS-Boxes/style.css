@@ -29,5 +29,23 @@
     padding: 10%;
 
 } */
+*{
+    border-radius: 5px;
+}
+.h1{
+    border: 2px solid green;
 
+}
+body{
+    margin: 0px;
+}
+/* ol{
+    list-style-type: disc;
+} */
+/* ul{
+    list-style-image: url(./9146846.png);
+}
+li{
+    margin-left: 100px;
+} */
 

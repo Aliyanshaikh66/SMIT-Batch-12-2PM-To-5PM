@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+}
+.header{
+    background-color: black;
+    height: 80px;
+    padding-bottom: 15px;
+}
+img{
+    width: 155px;
+    margin: 15px 350px;
+    display: inline-block;
+}
+li{
+    display: inline;
+    color: white;
+    margin-top: 40px;
+    margin-right: 50px;
+    
+}
+.logo,.menu{
+    margin-bottom: 100px;
+    display: inline-block;
+}
+.menu{
+    background-color: green;
+    margin-left: -5%;
+}
+.header,.menu{
+    display: flex;
+}
+.b1{
+    color: white;
+    background-color: transparent;
+    margin-top: 20px;
+    border-color: white;
+    border-radius: 25PX;
+    width: 150px;
+    padding: 15px;
+    margin-right: 10px;
+
+}
+.b2{
+    color: white;
+    background-color: red;
+    margin-top: 20px;
+    border-color: red;
+    border-radius: 25PX;
+    width: 150px;
+    padding: 15px;
+}
+i{
+    border-radius: 50%;
+    background-color: blue;
+
+}
+i{
+background-color: transparent;
+
+}
+
