@@ -1,0 +1,68 @@
+@import url(./index.css);
+/* .box{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    /* position: absolute; */
+    /* position: relative;
+    left: 100px; */
+    /* right: 10px;
+    bottom: 10px; */
+    /* position: absolute; */
+/* }
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+
+}  */
+img{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+.notification{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    position: relative;
+    /* right: 10px;
+    top: 10px; */
+
+
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.num{
+    width: 18px;
+    height: 18px;
+    color: white;
+    background-color: red;
+    border-radius: 9px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.whatsapp>img{
+    height: 60px;
+    width: 60px;
+    /* position: fixed; */
+    border-radius: 30px;
+}
+.whatsapp{
+    /* position: absolute; */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+div{
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+    margin: 10px;
+    float: left;
+}
