@@ -1,0 +1,295 @@
+/* .heading{
+    border: 2px solid black;
+    background-color: green;
+    text-align: center;
+    height: 200px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+.text1{
+    border: 2px solid black;
+    background-color: rgb(166, 196, 16);
+    text-align: center;
+    height: 200px;
+    animation-duration: 4s; */ 
+    /* /* animation-delay: 2s;
+}
+.border{
+    border-color: yellow;
+} */
+/* styles.css */
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #343a40;
+    color: white;
+    padding: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu .nav-item {
+    position: relative;
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link:focus {
+    background-color: #495057;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #495057;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #6c757d;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.search-form input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.signup-btn {
+    background-color: #ffc107;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+} */
+
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #343a40;
+    color: white;
+    padding: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.nav-menu .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-menu .nav-item {
+    position: relative;
+}
+
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link:focus {
+    background-color: #495057;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #495057;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    min-width: 150px; /* Ensures dropdown is wide enough */
+}
+
+.dropdown-menu .dropdown-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #6c757d;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.search-form {
+    flex: 1;
+    margin: 10px 0;
+}
+
+.search-form input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.login-btn {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.signup-btn {
+    background-color: #ffc107;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Initially hide menu on small screens */
+    }
+
+    .nav-menu.show {
+        display: flex; /* Show menu when toggled */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-menu {
+        position: static; /* Dropdowns become part of the flow in mobile view */
+        width: 100%;
+    }
+
+    .auth-buttons {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        padding: 8px 12px;
+    }
+
+    .search-form input[type="search"] {
+        font-size: 14px;
+    }
+}
+
