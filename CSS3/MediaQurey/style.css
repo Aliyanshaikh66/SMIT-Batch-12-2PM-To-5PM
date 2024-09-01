@@ -1,12 +1,14 @@
 .container{
-    width: 80%;
+    width: 100%;
     height: 500px;
     background-color: blue;
+    justify-content: center;
+    display: flex;
 }
-/* img{
+img{
     height: 500px;
-    width: 50%
-} */
+    width: 100%
+}
 @media screen and (max-width: 800px) {
     .container {
         

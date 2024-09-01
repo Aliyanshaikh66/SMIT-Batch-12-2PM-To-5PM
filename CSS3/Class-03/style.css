@@ -65,6 +65,7 @@ body{
 }
 
 .centre {
+    image: url(./img.jpg);
     /* display: inline-block; */
     background-color: #0088dd;
     border: 2px solid #000000;

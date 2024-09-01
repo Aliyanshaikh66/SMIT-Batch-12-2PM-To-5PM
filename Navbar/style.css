@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    margin: 0; /* Ensure there's no default margin */
+    font-family: Arial, sans-serif; /* Optional: Add a font for better text appearance */
+}
+
+.container {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    padding: 0 20px; /* Add some padding for spacing */
+}
+
+.logo > img {
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.menu > ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;
+}
+
+.menu > ul > li {
+    display: inline;
+    margin-left: 40px;
+}
+
+.menu > ul > li > a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    display: block;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none; /* Remove underline from links if used */
+    display: inline-block; /* Ensure buttons align properly */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start */
+        height: auto; /* Adjust height for better spacing */
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: 20px; /* Add margin for spacing */
+        float: none; /* Reset float */
+        display: flex;
+        justify-content: space-around; /* Distribute space evenly */
+    }
+
+    .menu > ul {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%;
+    }
+
+    .menu > ul > li {
+        margin-left: 0; /* Remove left margin for vertical stacking */
+        margin-bottom: 10px; /* Add space between items */
+        text-align: center; /* Center text in menu items */
+    }
+
+    .btn {
+        display: block;
+        width: 100%; /* Make buttons full width */
+        margin: 10px 0px; /* Add vertical spacing */
+    }
+}
