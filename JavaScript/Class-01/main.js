@@ -36,7 +36,7 @@
 
 // var msg = "Thank For your Input !";
 // alert(msg);
-// var name = "Mossa";
+// var name = "Moosa";
 // alert("Thanks, " + name  + "!");
 
 // alert("thanks" + username + "!")
@@ -48,17 +48,62 @@
 // var msg3 = Number(msg1);
 // var msg2 = prompt("Enter your 2nd Number");
 // var msg4 = Number(msg2);
-// alert(msg3 / msg4);
+// var ans = (msg3 + msg4);      
+// alert("your answer" + ans);
 
 
 
-
+// let msg1 = window.prompt("Enter your 1st Number");
+// let msg3 = Number(msg1);
+// let msg2 = window.prompt("Enter your 2nd Number");
+// let msg4 = Number(msg2);
+// let ans = (msg3 + msg4);      
+// alert(`you answer is  ${msg3+msg4}!`);
 
 
 // console.log(msg3 * msg4);
 
 
 
+// var num1 = 5;
+// var num2 = 10;
+// console.log(num1 + num2);
+
+
+// let nm1 = 10;
+// let num2 = nm1+5*2-5;
+// console.log(num2);
+// bod mas rules 
+// bracket
+// order
+// division
+// multipication
+// addition 
+// subtraction
 
 
 
+// var x = prompt("What is your name");
+// if (x === "Moosa")
+// {
+//   alert("Your Answer Is correct!");
+// }
+
+
+
+// var firstname = "Moosa Khan"
+// if (firstname === "Moosa" + "" + "Khan"){
+//     alert(firstname);
+// }
+// else{
+//     alert("wrong");
+// }
+
+
+var a = 4;
+if (+a === 12){
+    alert("This is True")
+}
+else{
+    alert("This is False")
+}
