@@ -88,6 +88,9 @@
 // {
 //   alert("Your Answer Is correct!");
 // }
+// else{
+//     alert("Try")
+// }
 
 
 
@@ -100,10 +103,38 @@
 // }
 
 
-var a = 4;
-if (+a === 12){
-    alert("This is True")
-}
-else{
-    alert("This is False")
-}
+// var a = 4;
+// if (++a === 5){
+//     alert("This is True")
+// }
+// else{
+//     alert("This is False")
+// }
+  
+
+
+// if(1 <= 5){
+//     alert("ture")
+// }
+// else{
+//     alert("False")
+// }
+
+
+//  and operator (&&) ager ek b condition false ho jai to ans false
+//  or operator (||) ager ek b condition true ho jai to ans true 
+
+// var x = 300;
+// var y = 15;
+// if(x >= 300 || y < 15)
+// {
+//   alert("ture")
+// }
+// else{
+//    alert("false")
+// }
+
+
+// &&
+
+// ||
