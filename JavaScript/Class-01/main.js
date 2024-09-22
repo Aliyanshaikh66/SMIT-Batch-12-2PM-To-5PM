@@ -138,3 +138,41 @@
 // &&
 
 // ||
+
+
+// var name = prompt("What is your name?");
+// var time = parseInt(prompt("What time is it? (in 24-h format)"), 10);
+
+// var remark;
+
+// if (time >= 8 && time < 12) {
+//     remark = "Good Mornin";
+
+
+
+// } else if (time >= 12 && time < 15) {
+//     remark = "Good Afternoon";
+//     alert(`${remark}  ${name} !`);
+// } 
+
+
+
+// else if (time > 15 && time < 19) {
+//     remark = "Good Evening";
+//     alert(`${remark}  ${name} !`);
+// }
+
+
+// else if (time > 19 && time < 21) {
+//     remark = "Good night";
+//     alert(`${remark}  ${name} !`);}
+
+
+// else if (time > 21 && time < 24) {
+// remark = "It's probably time for bed";
+// alert(`${remark}  ${name} !`);
+// }
+
+
+
+// alert(remark + ", " + name + "!");
