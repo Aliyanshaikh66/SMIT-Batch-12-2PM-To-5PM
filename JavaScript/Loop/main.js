@@ -5,9 +5,9 @@ for (initialization; condition; increment) {
     // Code to execute
 }
 
-let fruits = ["Apple", "Banana", "Orange"];
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]); // Prints each fruit
+let fruit = ["Apple", "Banana", "Orange"];
+for (let i = 0; i < fruit.length; i++) {
+    console.log(fruit[i]); // Prints each fruit
 }
 // Output: "Apple", "Banana", "Orange"
 
@@ -21,11 +21,11 @@ for (let i = 0; i < fruits.length; i++) {
 // Array length: The number of elements in an array (array.length).
 // Break: Exits the loop when a certain condition is met.
 
-let fruits = ["Apple", "Banana", "Orange"];
+let fruites = ["Apple", "Banana", "Orange"];
 let found = false;
 
-for (let i = 0; i < fruits.length; i++) {
-    if (fruits[i] === "Banana") {
+for (let i = 0; i < fruites.length; i++) {
+    if (fruites[i] === "Banana") {
         found = true;
         console.log("Banana found!");
         break; // Stops the loop once "Banana" is found
