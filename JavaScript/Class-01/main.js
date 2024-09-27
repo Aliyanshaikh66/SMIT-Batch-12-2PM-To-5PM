@@ -176,3 +176,80 @@
 
 
 // alert(remark + ", " + name + "!");
+
+
+
+
+// if ((x===y || a===b) && c===d) {
+//    var m = g=h;
+// }
+// else{
+//     var m = e=f;
+
+// } 
+// alert(m);
+
+
+// if (c === d) {
+//        if (x === y) {
+//          g = h;
+//       }
+//         else if (a === b) {
+//          g = h;
+//        }
+//         else {
+//           e = f;
+//        }
+//      }
+//      else {
+//        e = f;
+//      }
+
+
+// if statements nested
+
+// var a = 1;
+// var b = 2;
+// var c = 13;
+// var d = 14;
+// var x = 5;
+// var y = 6;
+
+// if ((a===b || a===b) && d===d) {
+//     console.log("true");
+// }
+// else{
+//     console.log("false");
+// }
+
+
+// var a = "1";
+// var b = 2;
+// var c = 13;
+// var d = 14;
+// var x = 5;
+// var y = 6;
+
+// if ((a==b || a===b) && d===d) {
+//     console.log("true");
+// }
+// else{
+//     console.log("false");
+// }
+
+var username = "SMIT";
+var Password = 123;
+// var Number = prompt("Enter Your Number");
+// var d = 14;
+
+// let Husnain = [username,Password];
+
+// console.log(Husnain);
+// var result = Husnain.pop(Password);
+// console.log(result);
+
+let name = ["karachi","pakistan","islamabad","sindh"];
+// let add = name.push(prompt("enter your city"));
+let addition = name();
+// let add = name.pop();
+console.log(name);
