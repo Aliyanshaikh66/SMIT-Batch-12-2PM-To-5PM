@@ -1,6 +1,5 @@
 // Simple Array
 
-
 let fruits = ["Apple", "Banana", "Orange"];
 console.log(fruits[0]); // Output: "Apple" (first element)
 console.log(fruits[2]); // Output: "Orange" (third element)
