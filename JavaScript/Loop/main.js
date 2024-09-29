@@ -1,13 +1,18 @@
 // For Loops
 // A for loop allows you to repeat a block of code for a specified number of times. It’s commonly used to iterate over arrays.
 
-for (initialization; condition; increment) {
-    // Code to execute
+// for (initialization; condition; increment) {
+//     // Code to execute
+// }
+
+var num = prompt("Enter Your Number")
+for (let i = 1; i <= 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`);
 }
 
-let fruits = ["Apple", "Banana", "Orange"];
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]); // Prints each fruit
+let fruit = ["Apple", "Banana", "Orange"];
+for (let i = 0; i < fruit.length; i++) {
+    console.log(fruit[i]); // Prints each fruit
 }
 // Output: "Apple", "Banana", "Orange"
 
@@ -25,11 +30,17 @@ let fruits = ["Apple", "Banana", "Orange"];
 let found = false;
 
 for (let i = 0; i < fruits.length; i++) {
-    if (fruits[i] === "Banana") {
+    if (fruits[i] === "Grapes") {
         found = true;
         console.log("Banana found!");
         break; // Stops the loop once "Banana" is found
     }
+        else {
+        (fruits[i] === "")
+        found = true
+        console.log("Banana found!");
+        break; // Stops the loop once "Banana" is found
+}        
 }
 
 if (!found) {
