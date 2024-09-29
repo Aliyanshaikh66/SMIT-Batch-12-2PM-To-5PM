@@ -1,8 +1,8 @@
 // Simple Array
 
-let fruits = ["Apple", "Banana", "Orange"];
-console.log(fruits[0]); // Output: "Apple" (first element)
-console.log(fruits[2]); // Output: "Orange" (third element)
+let fruit = ["Apple", "Banana", "Orange"];
+console.log(fruit[0]); // Output: "Apple" (first element)
+console.log(fruit[2]); // Output: "Orange" (third element)
 
 
 // Arrays: Adding and Removing Elements
