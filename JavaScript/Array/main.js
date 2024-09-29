@@ -1,3 +1,5 @@
+
+
 // Simple Array
 
 let fruit = ["Apple", "Banana", "Orange"];
@@ -16,7 +18,7 @@ console.log(fruit[2]); // Output: "Orange" (third element)
 
 
 let fruits = ["Apple", "Banana"];
-fruits.push("Orange"); // Adds "Orange" to the end
+fruits.unshift("orange"); // Adds "Orange" to the end
 console.log(fruits); // Output: ["Apple", "Banana", "Orange"]
 
 fruits.pop(); // Removes "Orange" from the end
@@ -38,12 +40,16 @@ console.log(fruits); // Output: ["Apple", "Banana"]
 // Replace elements: splice(index, count, element)
 
 
-let fruits = ["Apple", "Banana", "Orange"];
-fruits.splice(1, 1); // Removes 1 element at index 1 ("Banana")
-console.log(fruits); // Output: ["Apple", "Orange"]
+let fruites = ["Apple", "Banana", "Orange",];
+fruites.splice(2,0); // Removes 1 element at index 1 ("Banana")
+console.log(fruites); // Output: ["Apple", "Orange"]
 
-fruits.splice(1, 0, "Grapes"); // Inserts "Grapes" at index 1
-console.log(fruits); // Output: ["Apple", "Grapes", "Orange"]
+// Inserting Function
 
-fruits.splice(1, 1, "Mango"); // Replaces "Grapes" with "Mango"
-console.log(fruits); // Output: ["Apple", "Mango", "Orange"]
+fruites.splice(1, 0, "Grapes"); // Inserts "Grapes" at index 1
+console.log(fruites); // Output: ["Apple", "Grapes", "Banana, "Orange"]
+
+// updateing Function
+
+fruites.splice(1, 1, "Mango"); // Replaces "Grapes" with "Mango"
+console.log(fruites); // Output: ["Apple", "Mango", "Orange"]
