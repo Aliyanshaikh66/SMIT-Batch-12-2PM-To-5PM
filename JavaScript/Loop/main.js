@@ -9,6 +9,9 @@ var num = prompt("Enter Your Number")
 for (let i = 1; i <= 10; i++) {
     console.log(`${num} x ${i} = ${num * i}`);
 }
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
 
 let fruit = ["Apple", "Banana", "Orange"];
 for (let i = 0; i < fruit.length; i++) {
@@ -26,27 +29,23 @@ for (let i = 0; i < fruit.length; i++) {
 // Array length: The number of elements in an array (array.length).
 // Break: Exits the loop when a certain condition is met.
 
-let fruits = ["Apple", "Banana", "Orange"];
-let found = false;
+// let fruits = ["Apple", "Banana", "Orange"];
+// let found = false;
 
-for (let i = 0; i < fruits.length; i++) {
-    if (fruits[i] === "Grapes") {
+for (let i = 1; i < fruits.length; i++) {
+    if (fruits[i] === "Apple") {
         found = true;
-        console.log("Banana found!");
+        console.log("is found!");
         break; // Stops the loop once "Banana" is found
     }
         else {
-        (fruits[i] === "")
+        (fruits[i] === "Banana")
         found = true
-        console.log("Banana found!");
-        break; // Stops the loop once "Banana" is found
-}        
-}
+        console.log("is found!");
+        break; // Stops the loop once "Banana" is found   
 
-if (!found) {
-    console.log("Banana not found!");
+}      
 }
-
 
 // Create an array of five numbers. Use a loop to find a specific number and stop the loop once it’s found.
 
@@ -67,7 +66,44 @@ for (let i = 0; i < matrix.length; i++) {
         console.log(matrix[i][j]); // Prints each element of the 2D array
     }
 }
+
 // Output: 1 2 3 4 5 6 7 8 9
 
 
 // Create a 2D array representing a 3x3 matrix of numbers. Use nested loops to print each element of the matrix.
+// var city = prompt ("Enter a City Name"); 
+
+// var Cities = ["karachi" , "Lahore" , "Islamabad" , "larkana"]
+ 
+var matchFound = "no";
+ for (var i = 0; i <= 4; i++){
+    if (Cities[0] === city) {
+      matchFound = "yes";
+      alert("The City of Light");
+    }
+    else if (Cities[1] === city) {
+        matchFound = "yes";
+        alert("Lahore");
+      }
+      else if (Cities[2] === city) {
+        matchFound = "yes";
+        alert("Islamabad");
+      }
+      else if (Cities[3] === city) {
+        matchFound = "yes";
+        alert("Sindh");
+      }
+
+}
+//   if (matchFound === "no") {
+//     alert("It's not on the list");
+//  }
+
+
+
+//  syntex loop
+
+
+for (let i = 0; i < 3; i++){ 
+    console. log("Hello, world!") 
+} 
