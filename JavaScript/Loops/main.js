@@ -35,13 +35,13 @@ let found = false;
 
 for (let i = 0; i < fruites.length; i++) {
     if (fruites[i] === "Banana") {
-=======
+// =======
 // let fruits = ["Apple", "Banana", "Orange"];
 // let found = false;
 
 for (let i = 1; i < fruits.length; i++) {
     if (fruits[i] === "Apple") {
->>>>>>> feb649fe031e2854909f5240c95f339caa1f0837
+// >>>>>>> feb649fe031e2854909f5240c95f339caa1f0837
         found = true;
         console.log("is found!");
         break; // Stops the loop once "Banana" is found
