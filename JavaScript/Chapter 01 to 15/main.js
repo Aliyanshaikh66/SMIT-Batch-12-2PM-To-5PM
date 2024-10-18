@@ -3,7 +3,7 @@
 // a = 10;
 // b = 20;
 // c = a + b; 
-// console.log(c);
+// console.log(c); //1020
 
 // var a = 40;
 // var b = 60;
@@ -121,8 +121,8 @@
 // }
 
 
-//  and operator (&&) ager ek b condition false ho jai to ans false
-//  or operator (||) ager ek b condition true ho jai to ans true 
+//  and operator (&&) ager ek b condition ya first false ho jai to ans false
+//  or operator (||) ager ek be condition ya \id true ho jai to ans true ha
 
 // var x = 300;
 // var y = 15;
@@ -173,11 +173,7 @@
 // alert(`${remark}  ${name} !`);
 // }
 
-
-
 // alert(remark + ", " + name + "!");
-
-
 
 
 // if ((x===y || a===b) && c===d) {
@@ -253,3 +249,5 @@ let name = ["karachi","pakistan","islamabad","sindh"];
 let addition = name();
 // let add = name.pop();
 console.log(name);
+
+
