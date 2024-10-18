@@ -70,7 +70,7 @@
 // var cleanestCities = ["karachi", "lahore", "kpk", "islamabad"];
 // for (var i = 0; i <= 4; i++) {
 //   if (cityToCheck === cleanestCities[i]) {
-//   alert(cleanestCities[i]);
+//   alert(cleanestCities[i]);  
 // }
 // }
 //  Assignment 1
@@ -105,3 +105,54 @@
 // // // Extracting using substring
 // // let part2 = str.substring(4, 14);  // Extracts from index 4 to 13
 // // console.log(part2);  // Output: "Script Pro"
+
+// var text = "Aman"
+// console.log(text);
+//  for (var i = 0; i < text.length; i++) {
+//  if (text.slice(i, i + 15) === "Aman") {
+//  text = text.slice(0, i) + "Muhammad Aman" + text.slice(i + 15);
+//  }
+// }
+// console.log(text);
+
+// chapter 23 repeat
+
+// var text = prompt("Enter your Email only gmail account");
+// for (var i = 0; i < text.length; i++) {
+//  if (text.slice(i) === "@gmail.com") {
+//  console.log("You are successful login");
+//  }
+//  else {
+//     console.log("invalid Email");
+//     break;
+// }
+//  }
+
+//  text = prompt("Enter your Email (only Gmail accounts are allowed)");
+
+// if (text.slice(-10) === "@gmail.com") {
+//     console.log("You are successfully logged in");
+// } else {
+//     console.log("Invalid Email");
+// }
+
+// var text = "apple";
+// var segments = text.split(""); 
+// console.log(segments); 
+// // Output: [a,p,p,l,e]
+
+// const text = "Hello";
+// const segmentLength = 1;
+// const segments = [];
+
+// for (let i = 0; i <= text.length - segmentLength; i++) {
+//     segments.push(text.slice(i, i + segmentLength));
+// }
+
+// console.log(segments); // Output:  ['H', 'e', 'l', 'l', 'o']
+
+// Switch Case Statemant
+
+
+
+
