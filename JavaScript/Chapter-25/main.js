@@ -4,7 +4,6 @@
 // str.split();
 // console.log(str); 
 
-
 // var str = prompt("Enter a word");
 // var splitstr = str.split("").reverse().join("");
 
@@ -20,8 +19,6 @@
 //      console.log(str[i], i);
 // } 
 
-
-
 // var str = prompt("Enter a word");
 // var splitstr = str.split("").reverse().join("");
 // // console.log(convert);
@@ -30,7 +27,6 @@
 // }else{
 //      console.log("it's not a palindrome word")
 // }
-
 
 //  var Firstname = "aliyan ";
 //  var fullname = Firstname + "SMIT"
@@ -49,7 +45,6 @@
 // console.log(text);
 // }
 
-
 //     Chapter 24 "Finding a character at a location"
 
 // var text = prompt("Emter your mail ");
@@ -66,15 +61,4 @@
        
 //       }
 
-// Chapter 26 "Random Number"
 
-
-
-// var result = Math.random(2);
-// console.log(result);
-
-// var result = Math.ceil(2);
-// console.log(result);
-
-// var result = Math.floor(2);
-// console.log(result);
