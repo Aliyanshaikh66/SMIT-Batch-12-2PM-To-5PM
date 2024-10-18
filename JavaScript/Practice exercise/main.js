@@ -1,8 +1,8 @@
-// var arr = ["apple", "mango", "banana"]
+var arr = ["apple", "mango", "banana"]
 
-// var str = "apple";
-// str.split();
-// console.log(str); 
+var str = "apple";
+str.split();
+console.log(str); 
 
 
 // var str = prompt("Enter a word");
