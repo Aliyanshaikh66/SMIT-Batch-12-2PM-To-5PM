@@ -49,3 +49,35 @@
 //  num = Number(str);
 //  prettyNum = num.toFixed(3)
 //  console.log(prettyNum);
+
+
+// var dateString = rightNow.toString();
+// console.log(dateString);
+
+// var date = new Date();
+// var day = date.getDate()
+// console.log(day);
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+//  var now = new Date();
+//  var theDay = now.getDay();
+//  var nameOfToday = dayNames[theDay];
+//  console.log(nameOfToday);
+
+
+// Stop watch
+
+// var d = new Date();
+//  var currentMonth = d.getDate();
+//  console.log(currentMonth);
+
+// var d = new Date();
+// d.setFullYear(2005)
+// console.log(d);
+
+
+// alert("Hi, I will find your Aman:");
+// let name = prompt("Enter your FullName :");
+// let name2 = prompt("Enter your FatherName :");
+// let studentName = document.getElementById("student-name").innerHTML=name;
+// let FatherName = document.getElementById("Father").innerHTML=name2;
