@@ -10,7 +10,7 @@
 // console.log(result);
 
 
-<<<<<<< HEAD
+
 // var num = 2.99;
 // console.log(Math.round(num));
 // console.log(Math.ceil(num));
@@ -40,11 +40,11 @@
 // console.log(num1);
 
 
-var num = "100";
-var num1 = (Math.random(num));
-console.log(num1);
+// var num = "100";
+// var num1 = (Math.random(num));
+// console.log(num1);
 
-=======
+// =======
 // var num = 2.5;
 // console.log(Math.round(num));
 // var num = 2.1;
@@ -116,4 +116,10 @@ console.log(num1);
 // let name2 = prompt("Enter your FatherName :");
 // let studentName = document.getElementById("student-name").innerHTML=name;
 // let FatherName = document.getElementById("Father").innerHTML=name2;
->>>>>>> ab8d32cbe96f08e724a1733a46f4c232ec14c911
+
+// [10][01][2024]
+var date = new Date("June 2, 2035");
+// var date2 = new date "June 30, 2035
+// var currentMonth = date.getMonth()
+console.log(date);
+
