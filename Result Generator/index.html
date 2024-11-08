@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Result Generator</h2>
+        <input type="text" id="rollNoInput" placeholder="Enter Roll Number">
+        <button onclick="generateResult()">Get Result</button>
+        
+        <div id="result" class="result">
+            <p><strong>Roll No:</strong> <span id="studentRoll"></span></p>
+            <p><strong>Name:</strong> <span id="studentName"></span></p>
+            <p><strong>Grade:</strong> <span id="studentGrade"></span></p>
+            <p><strong>Remarks:</strong> <span id="studentRemarks"></span></p>
+        </div>
+        
+        <p id="notFoundMessage" class="not-found">Result not found for this roll number.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
