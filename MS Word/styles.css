@@ -1,0 +1,78 @@
+/* Basic reset for the page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+/* Wrapper for the editor */
+.editor-wrapper {
+    width: 70%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Toolbar styling */
+.toolbar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tool-button {
+    background-color: #f0f1f6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.tool-button:hover {
+    background-color: #e1e2e7;
+}
+
+select {
+    font-size: 14px;
+    padding: 5px;
+    background-color: #f0f1f6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Editor styling */
+.editor {
+    min-height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fafafa;
+    outline: none;
+    resize: none;
+}
+
+.editor:empty:before {
+    content: attr(placeholder);
+    color: #aaa;
+    font-style: italic;
+}

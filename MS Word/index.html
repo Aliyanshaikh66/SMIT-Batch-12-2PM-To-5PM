@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor-wrapper">
+        <div class="toolbar">
+            <button class="tool-button" id="bold"><strong>B</strong></button>
+            <button class="tool-button" id="italic"><em>I</em></button>
+            <button class="tool-button" id="underline"><u>U</u></button>
+            <button class="tool-button" id="align-left">Left</button>
+            <button class="tool-button" id="align-center">Center</button>
+            <button class="tool-button" id="align-right">Right</button>
+            <select class="tool-button" id="font-size">
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+            </select>
+            <button class="tool-button" id="clear">Clear</button>
+        </div>
+        <div contenteditable="true" id="editor" class="editor" placeholder="Start typing here..."></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
