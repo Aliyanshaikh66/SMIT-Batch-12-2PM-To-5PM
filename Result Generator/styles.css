@@ -31,14 +31,14 @@ button {
     font-size: 16px;
     border: none;
     border-radius: 4px;
-    background-color: #4CAF50;
+    background-color: #0091ff;
     color: white;
     cursor: pointer;
     width: 100%;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #c2e60d;
 }
 
 .result {
