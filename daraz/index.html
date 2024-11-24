@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daraz Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Daraz.pk Clone</h1>
+
+    <div id="auth-section">
+      <h2>Login</h2>
+      <input type="text" id="login-email" placeholder="Email">
+      <input type="password" id="login-password" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <p>Don't have an account? <button onclick="showSignup()">Sign Up</button></p>
+    </div>
+
+    <div id="signup-section" style="display: none;">
+      <h2>Sign Up</h2>
+      <input type="text" id="signup-name" placeholder="Name">
+      <input type="text" id="signup-email" placeholder="Email">
+      <input type="password" id="signup-password" placeholder="Password">
+      <button onclick="signup()">Sign Up</button>
+      <p>Already have an account? <button onclick="showLogin()">Login</button></p>
+    </div>
+
+    <div id="home-section" style="display: none;">
+      <h2>Welcome, <span id="user-name"></span>!</h2>
+      <button onclick="logout()">Logout</button>
+      <div id="products">
+        <h3>Products:</h3>
+        <div class="product">
+          <p>Product 1</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <p>Product 2</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
