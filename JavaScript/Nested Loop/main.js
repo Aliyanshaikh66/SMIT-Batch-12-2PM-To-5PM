@@ -128,13 +128,14 @@
 // }
 //  }
 
-//  text = prompt("Enter your Email (only Gmail accounts are allowed)");
+var text = prompt("Enter your Email (only Gmail accounts are allowed)");
 
-// if (text.slice(-10) === "@gmail.com") {
-//     console.log("You are successfully logged in");
-// } else {
-//     console.log("Invalid Email");
-// }
+if (text.slice(-10) === "@gmail.com") {
+    console.log("You are successfully logged in");
+} else {
+    alert("Invalid Email")
+    // console.log("Invalid Email");
+}
 
 // var text = "apple";
 // var segments = text.split(""); 
