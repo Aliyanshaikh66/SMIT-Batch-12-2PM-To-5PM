@@ -1,0 +1,253 @@
+
+  <!-- <div class="container">
+    <h1>Welcome to the Hero Page</h1>
+    <p id="welcomeMessage"></p>
+    <button onclick="logout()">Logout</button>
+  </div> -->
+
+  <!-- <script src="hero.js"></script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f4f4f9;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 16px;
+            padding: 16px;
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 12px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .card p {
+            font-size: 1em;
+            color: #666;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 16px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .card a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cards-container"></div>
+
+    <script>
+        // Define cards data using an object
+        var cardsData = [
+            {
+                title: "Technetcloud Services",
+                description: "Explore our services including AI chatbot, mobile apps, and more.",
+                image: "./images.jpg",
+                link: "https://technetcloud.com"
+            },
+            {
+                title: "Virtual Internship",
+                description: "Get hands-on experience through our virtual internships.",
+                image: "https://via.placeholder.com/300",
+                link: "https://technetcloud.com/internships"
+            },
+            {
+                title: "Learning Platform",
+                description: "Enhance your skills with our interactive learning platform.",
+                image: "./learn.jpeg",
+                link: "https://technetcloud.com/learning"
+            }
+        ];
+
+        // Function to generate cards dynamically
+        function generateCards(data) {
+            var container = document.getElementById("cards-container");
+
+            for (var i = 0; i < data.length; i++) {
+                var card = data[i];
+                var cardElement = document.createElement("div");
+                cardElement.className = "card";
+
+                cardElement.innerHTML = `
+                    <img src="${card.image}" alt="${card.title}">
+                    <h3>${card.title}</h3>
+                    <p>${card.description}</p>
+                    <a href="${card.link}" target="_blank">Learn More</a>
+                `;
+
+                container.appendChild(cardElement);
+            }
+        }
+
+        // Call the function to generate cards
+        generateCards(cardsData);
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Cards in a Row</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #cards-container {
+            display: flex;
+            flex-wrap: nowrap; /* Keep all cards in a single row */
+            gap: 16px; /* Add spacing between cards */
+            overflow-x: auto; /* Enable horizontal scrolling if cards overflow */
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 12px;
+            width: 200px; /* Make cards smaller */
+            flex-shrink: 0; /* Prevent cards from shrinking */
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .card a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cards-container"></div>
+
+    <script>
+        // Define cards data using an object
+        var cardsData = [
+            {
+                title: "Technetcloud Services",
+                description: "Explore our services.",
+                image: "https://via.placeholder.com/200",
+                link: "https://technetcloud.com"
+            },
+            {
+                title: "Virtual Internship",
+                description: "Get hands-on experience.",
+                image: "https://via.placeholder.com/200",
+                link: "https://technetcloud.com/internships"
+            },
+            {
+                title: "Learning Platform",
+                description: "Enhance your skills.",
+                image: "https://via.placeholder.com/200",
+                link: "https://technetcloud.com/learning"
+            }
+        ];
+
+        // Function to generate cards dynamically
+        function generateCards(data) {
+            var container = document.getElementById("cards-container");
+
+            for (var i = 0; i < data.length; i++) {
+                var card = data[i];
+                var cardElement = document.createElement("div");
+                cardElement.className = "card";
+
+                cardElement.innerHTML = `
+                    <img src="${card.image}" alt="${card.title}">
+                    <h3>${card.title}</h3>
+                    <p>${card.description}</p>
+                    <a href="${card.link}" target="_blank">Learn More</a>
+                `;
+
+                container.appendChild(cardElement);
+            }
+        }
+
+        // Call the function to generate cards
+        generateCards(cardsData);
+    </script>
+
+</body>
+</html> -->
