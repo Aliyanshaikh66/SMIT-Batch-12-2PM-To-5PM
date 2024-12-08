@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
 </head>
-<body>
+<body> -->
 
    <!-- <form onSubmit="return validateEmail();">
         Please enter your last name.<br>
@@ -20,7 +20,7 @@
             <input type="radio" name="r1" value="hat"> Hat<br>
             <input type="submit" value="Submit Form">
             </form> -->
-
+<!-- 
             <form onSubmit="return checkPassword();">
                 Enter a password<br>
                 (8-12 characters, at least 1 number, no spaces,)<br>
@@ -28,7 +28,7 @@
                 <input type="submit" value="Submit">
                 </form>
 
-
+ -->
 
             
 
@@ -266,7 +266,7 @@ let sentence = "I love cats and dogs";
 let newSentence = sentence.replace("cats", "birds").replace("dogs", "fish");
 console.log(newSentence);  // Output: "I love birds and fish" -->
 
-<script src="main.js"></script>
+<!-- <script src="main.js"></script> -->
 <!-- <script>
     var i = 0;
    while (i < 0) {
@@ -279,6 +279,70 @@ console.log(newSentence);  // Output: "I love birds and fish" -->
 <!-- <a href="JavaScript:void(0)" onClick="var greet = hi; alert(greet);">Click</a> -->
 <!-- <input type="button" value="Click" onClick="alert('Hello world!');"> -->
 
+<!-- 
+</body>
+</html> -->
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+        }
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+        .weather-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <input type="text" id="city" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+    <div class="weather-info" id="weather-info"></div>
+
+    <script>
+        function getWeather() {
+            var city = document.getElementById('city').value;
+            var APIKey = 'api key';
+            var url= 'https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}'; // Replace with your OpenWeatherMap API key
+            
+            fetch(url)
+                .then(function(response) {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error('City not found');
+                    }
+                })
+                .then(function(data) {
+                    var weatherInfo = document.getElementById('weather-info');
+                    weatherInfo.innerHTML = '<h2>Weather in ' + data.name + '</h2>' +
+                                            '<p>Temperature: ' + data.main.temp + '°C</p>' +
+                                            '<p>Weather: ' + data.weather[0].description + '</p>' +
+                                            '<p>Humidity: ' + data.main.humidity + '%</p>' +
+                                            '<p>Wind Speed: ' + data.wind.speed + ' m/s</p>';
+                })
+                .catch(function(error) {
+                    var weatherInfo = document.getElementById('weather-info');
+                    weatherInfo.innerHTML = '<p>' + error.message + '</p>';
+                });
+        }
+    </script>
 </body>
 </html>
