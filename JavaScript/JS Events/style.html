@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Setting Style</title>
+    <!-- <style>
+        .p1{
+            font-size: 2em;
+            color: red;
+        }
+    </style> -->
+</head>
+<body>
+<!-- 
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita accusamus eveniet, odio repellendus hic sint cum? Deserunt hic quisquam expedita iste magnam eaque qui porro, voluptatum inventore provident nam perspiciatis.</p>
+    <button onclick="makebig()">onClick</button>
+
+    <script>
+        function makebig(){
+     document.getElementById("p1").style.fontFamily = "italic";
+    }
+    </script> -->
+
+    <p>Hello</p>
+    <p>World</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+<script>
+    var par = document.getElementsByTagName("p")
+     for (var i = 0; i < par.length; i++) {
+   par[i].style.fontFamily = "Verdana, Geneva, arial";
+   par[i].style.color = "red";
+   par[i].style.fontSize = "20px";
+ }
+
+// var textInMiddleParagraph = par[0].innerHTML
+// par[0].innerHTML = "World"
+// console.log(textInMiddleParagraph);
+</script>
+</body>
+</html>
