@@ -9,26 +9,28 @@
 // Taake galti se variable ka overwrite na ho.
 // Examples:
 // Block Scope (let/const):
-// javascript
+//  Examples
 
 {
-    let message = "Hello";
-    console.log(message); // Output: Hello
+  let message = "Hello";
+  console.log(message); // Output: Hello
 }
 // console.log(message); // Error: message is not defined
 // Explanation: let aur const se declare kiye gaye variables sirf us block ke andar accessible hote hain jahan unhe define kiya gaya ho. Yeh scoping ka use aapke program ko clean aur maintainable banata hai.
 
 // Function Scope (var):
+let name3 = "ali";
+
 function test() {
-    var number = 42;
-    console.log(number); // Output: 42
+  var number = 42;
+  console.log(name3); // Output: 42
 }
-// console.log(number); // Error: number is not defined
+console.log(number); // Error: number is not defined
 // Explanation: var se declare kiye gaye variables sirf us function ke andar accessible hote hain jahan unhe define kiya gaya ho. Yeh ensure karta hai ke aapka variable sirf usi function ke andar accessible ho.
 
 // Global Scope:
-// javascript
- 
+//  Examples
+
 var globalVar = "Accessible everywhere!";
 console.log(globalVar); // Output: Accessible everywhere!
 // Explanation: Agar aap variable ko globally declare karte hain, to woh har jagah accessible hota hai. Lekin isse aapko careful rehna padta hai, warna different parts of the code mein conflicts ho sakte hain.
@@ -44,27 +46,27 @@ console.log(globalVar); // Output: Accessible everywhere!
 // Taake functions ka state memory mein store ho sake, jo agle function call mein use hota hai.
 // Examples:
 // Basic Closure:
-// javascript
- 
+//  Examples
+
 function outer() {
-    let message = "Hello";
-    return function inner() {
-        console.log(message); // Output: Hello
-    };
+  let message = "Hello";
+  return function inner() {
+    console.log(message); // Output: Hello
+  };
 }
 const greet = outer();
 greet();
 // Explanation: inner function ko apni outer function outer ke variable message tak access milta hai, yeh closure hai. Closure aapko private data ke sath kaam karne mein madad deta hai.
 
 // Counter Using Closure:
-// javascript
- 
+// in  Examples
+
 function createCounter() {
-    let count = 0;
-    return function () {
-        count++;
-        return count;
-    };
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  };
 }
 const counter = createCounter();
 console.log(counter()); // Output: 1
@@ -72,12 +74,12 @@ console.log(counter()); // Output: 2
 // Explanation: createCounter function ek closure return karta hai jo count variable ko yaad rakhta hai aur usse modify karta hai har baar jab counter call hota hai.
 
 // Private Variables with Closure:
-// javascript
- 
+//  Examples
+
 function createSecret(secret) {
-    return function () {
-        console.log(secret);
-    };
+  return function () {
+    console.log(secret);
+  };
 }
 const secretMessage = createSecret("This is a secret!");
 secretMessage(); // Output: This is a secret!
@@ -94,30 +96,31 @@ secretMessage(); // Output: This is a secret!
 // Taake multiline strings likhne mein asani ho.
 // Examples:
 // String Interpolation:
-// javascript
- 
+//  Examples
+
 let name1 = "Ali";
 console.log(`Hello, ${name1}!`); // Output: Hello, Ali!
 // Explanation: Template literals ka use karke aap string mein variables ko directly insert kar sakte hain. Yeh code ko clean aur readable banata hai.
 
 // Multiline Strings:
-// javascript
- 
+//  Examples
+
 let message = `This is 
 a multiline 
 string.`;
 console.log(message);
-// Explanation: Template literals aapko multiline strings banane ki suvidha dete hain bina kisi special character ke, jaise \n.
+// Explanation: Template literals aapko multiline strings banane ki ijazat dete hain bina kisi special character ke, jaise \n.
 
 // Expression Evaluation:
-// javascript
- 
-let a = 5, b = 10;
-console.log(`The sum of ${a} and ${b} is ${a + b}.`); // Output: The sum of 5 and 10 is 15.
+//  Examples
+
+// let a = 5,
+//     b = 10;
+// console.log(`The sum of ${a} and ${b} is ${a + b}.`); // Output: The sum of 5 and 10 is 15.
 // Explanation: Template literals mein aap directly expressions ko calculate kar sakte hain aur unhe string mein insert kar sakte hain.
 
 // 4. Destructuring
-// Destructuring aapko arrays aur objects ke values ko directly variables mein extract karne ki suvidha deta hai.
+// Destructuring aapko arrays aur objects ke values ko directly variables mein extract karne ki ijazat deta hai.
 
 // Kahan Use Hota Hai:
 // Jab aapko array ya object ke elements ko asani se variables mein extract karna ho.
@@ -125,13 +128,13 @@ console.log(`The sum of ${a} and ${b} is ${a + b}.`); // Output: The sum of 5 an
 // Kyun Use Hota Hai:
 // Taake aapko manually values ko extract karne ki zaroorat na ho, aur aapka code concise ho.
 // Array Destructuring:
- 
+
 const [x, y] = [10, 20];
 console.log(x, y); // Output: 10, 20
 // Explanation: Array destructuring se aap easily array ke elements ko variables mein store kar sakte hain.
 
 // Object Destructuring:
- 
+
 const person = { name: "Ali", age: 25 };
 const { name, age } = person;
 console.log(name, age); // Output: Ali, 25
@@ -139,10 +142,6 @@ console.log(name, age); // Output: Ali, 25
 
 // Default Values:
 
- 
 const [a = 1, b = 2] = [];
 console.log(a, b); // Output: 1, 2
 // Explanation: Destructuring mein aap default values set kar sakte hain agar array ya object mein value missing ho.
-
-
-
