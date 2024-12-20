@@ -190,3 +190,24 @@ Explanation: In arrow functions, `this` refers to the lexical scope, which is us
   - Arrow functions do not have access to the `arguments` object.
   - Regular functions have access to the `arguments` object, which stores all passed arguments.
 
+
+- **Next Class Topic's:**
+1- Spread Operator
+2- Rest parameter
+3- Arrow functions
+4- Enhanced object literals
+5- Iterators & For..of
+6- Generators
+7- Modules
+8- Map
+9- Array methods
+10- Higher-order function
+11- CallBack
+12- Promises
+13- Exponentiation Operator
+14- Classes
+15- Ternary Operator
+16- Optional chaining
+
+
+
